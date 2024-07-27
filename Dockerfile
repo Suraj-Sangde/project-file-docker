@@ -1,4 +1,4 @@
 FROM tomcat
 MAINTAINER suraj
-VOLUME /mnt/wars:/usr/local/tomcat/webapps
+COPY /mnt/wars/LoginWebApp.war /usr/local/tomcat/webapps
 EXPOSE 8080
